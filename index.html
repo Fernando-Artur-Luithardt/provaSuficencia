@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova suficiência</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="/api.js"></script>
+</head>
+<body>
+    <div id="alert" class="x_content" style="z-index: 1000; visibility: hidden; position: fixed">
+        <div class="alert alert-dismissible text-center" role="alert">
+            <strong></strong>
+            <button type="button" class="close-alert" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+    
+            <div class="form-group col-sm-3 col-xs-6">
+                <label for="employee_name">Nome <span class="required">*</span></label>
+                <div>
+                    <input autofocus type="text" id="employee_name" name="employee_name" required="required" class="form-control text-right" value="">
+                </div>
+            </div>
+    
+            <div class="form-group col-sm-3 col-xs-6">
+                <label for="employee_salary">Salário <span class="required">*</span></label>
+                <div>
+                    <input type="text" id="employee_salary" name="employee_salary" class="form-control text-right" value="">
+                </div>
+            </div>
+    
+            <div class="form-group col-sm-3 col-xs-6">
+                <label for="employee_age">Idade <span class="required">*</span></label>
+                <div>
+                    <input type="number" id="employee_age" name="employee_age" required="required" class="form-control" value="">
+                </div>
+            </div>
+
+            <div class="form-group col-sm-2 col-xs-4">
+                <button type="button" style="margin-top: 24px;" id="add" class="btn btn-success">Salvar</button>
+            </div>
+    
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Salário</th>
+                    <th scope="col">Idade</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+               
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
